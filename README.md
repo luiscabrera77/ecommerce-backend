@@ -1,49 +1,54 @@
-# eCommerce Backend
+# ORM eCommerce Backend
 
 ## Description
 ![badge](https://img.shields.io/badge/license-MIT-blue)
 
-A command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL. Allows user to view and manage the departments, roles, and employees in a company.
+A backend for an e-commerce site. Uses MySQL2 database and Sequelize as the Object-Relational Mapping (ORM) tool to connect to an Express.js API. Uses the dotenv package to protect sensitive data.
 
-![Screenshot](https://user-images.githubusercontent.com/54341829/117550910-8145e300-b008-11eb-91ab-aa8bb49b2aed.png)
+![Screenshot](https://user-images.githubusercontent.com/54341829/117564927-48dbee80-b074-11eb-80c1-20ace8189c13.png)
 
-Watch a walkthrough video here: https://drive.google.com/file/d/1RJ9bzqmK-xoJ-n6Ih2Wt8odakMPFIpz0/view
+Watch a walkthrough video here: 
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
-Install the following packages: npm init —y, npm install express mysql2 inquirer, npm install jest --save-dev, npm install console.table --save, npm install ascii-art-table
+Download the code and do a npm install. Edit the package.json and create a .env file with your own data. Run mysql -u root -p and then source db/schema.sql to create initial tables. Then, execute "npm run seed" to populate the database with seed data. Start the server with "npm start" and the API will start responding on localhost:3001.
 
 ## Usage
-Simply run "node index". You will be presented with the following options:
+Use Insomnia or Postman to interact with the API. Consult the models for detailed information of each table and the association methods.
 
-VIEW
-- All Employees
-- Employees by Department
-- Employees by Manager
-- All Departments
-- All Roles
-- Budget by Department
+CATEGORIES ROUTES
+http://localhost:3001/api/categories
 
-UPDATE…
-- Employee Role
-- Employee Manager
+- VieW All Employees
+- View Single Category
+- Create a new Category
+- Update a Category
+- Delete a Category
 
-ADD A NEW…
-- Employee
-- Department
-- Role
+PRODUCTS ROUTES
+http://localhost:3001/api/products
 
-DELETE…
-- Employee
-- Department
-- Role
+- VieW All Products
+- View Single Product
+- Create a new Product
+- Create a new Product using minimal data
+- Update a Product
+- Update a Product using minimal data
+- Delete a Product
+
+TAGS ROUTES
+http://localhost:3001/api/tags
+
+- VieW All Tags
+- View Single Tag
+- Create a new Tag
+- Update a Tag
+- Delete a Tag
 
 ## License
 
@@ -67,12 +72,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 SOFTWARE.
-
-## Tests
-Used jest for testing, simply run "npm test" 
-
-## Roadmap
-An express API is being built, some queries must be updated.
 
 ## Questions
 Find me on Github as: [luiscabrera77](https://github.com/luiscabrera77)
