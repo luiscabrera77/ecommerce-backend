@@ -20,7 +20,7 @@ Product.init(
       allowNull: false
     },
     price: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL(7,2),
       allowNull: false,
       validate: {
         isDecimal: true
@@ -28,8 +28,11 @@ Product.init(
     },
     stock: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+
+      // DefaultValue was a challenge instruction, but it is a bad requirement. 
+      // If it is required, this default value will never be used.
       defaultValue: 10,
+      allowNull: false,
       Validate: {
         isNumeric: true
       }
