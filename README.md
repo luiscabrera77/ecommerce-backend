@@ -16,7 +16,7 @@ Watch a walkthrough video here:
 - [Questions](#questions)
 
 ## Installation
-Download the code and do a npm install. Edit the package.json and create a .env file with your own data. Run mysql -u root -p and then source db/schema.sql to create initial tables. Then, execute "npm run seed" to populate the database with seed data. Start the server with "npm start" and the API will start responding on localhost:3001.
+Download the code, and do a npm install. Review the package.json and create a .env file with your own data. Run "mysql -u root -p" and then "source db/schema.sql" to create initial tables. Then, execute "npm run seed" to populate the database with seed data. Start the server with "npm start" and the API will start responding on localhost:3001.
 
 ## Usage
 Use Insomnia or Postman to interact with the API. Consult the models for detailed information of each table and the association methods.
