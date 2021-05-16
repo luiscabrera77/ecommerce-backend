@@ -6,7 +6,7 @@
 A backend for an e-commerce site. Uses MySQL2 database and Sequelize as the Object-Relational Mapping (ORM) tool to connect to an Express.js API. Uses the dotenv package to protect sensitive data.
 
 Accessing the API routes in Insomnia:
-![Screenshot]!(https://user-images.githubusercontent.com/54341829/118383986-66570e00-b5c8-11eb-81e1-16ae24c3eebe.png)
+![Screenshot](https://user-images.githubusercontent.com/54341829/118383986-66570e00-b5c8-11eb-81e1-16ae24c3eebe.png)
 
 Watch a walkthrough video here: https://drive.google.com/file/d/1IHbTx-ri2u1sEMDGRf-YlrJZKk9gfgeR/view
 
